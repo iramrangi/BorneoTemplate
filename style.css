@@ -769,3 +769,313 @@ body {
     justify-content: center;
   }
 }
+
+/* Custom responsive styles for 400x592 dimension */
+@media (max-width: 400px) and (max-height: 592px) {
+  body {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .container {
+    width: 95%;
+    padding: 0 0.5rem;
+  }
+
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem 0;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .nav {
+    position: fixed;
+    top: 56px;
+    right: 0;
+    width: 220px;
+    height: calc(100% - 56px);
+    background-color: #ffffff;
+    box-shadow: -3px 0 10px rgba(0,0,0,0.1);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 1500;
+  }
+
+  .nav.nav-open {
+    transform: translateX(0);
+  }
+
+  .nav-list {
+    flex-direction: column;
+    padding: 0.5rem 0;
+  }
+
+  .nav-link {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #e5e7eb;
+    color: #2563eb;
+  }
+
+  .nav-link:hover,
+  .nav-link:focus {
+    background-color: #ef4444;
+    color: #ffffff;
+  }
+
+  .nav-toggle {
+    display: block;
+    padding: 0.25rem;
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    z-index: 1600;
+  }
+
+  .hero {
+    padding: 3rem 1rem 4rem;
+  }
+
+  /* Improved footer styles */
+  .footer {
+    padding: 2.5rem 1rem;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .newsletter {
+    flex: none;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .newsletter h3 {
+    font-size: 1.1rem;
+  }
+
+  .newsletter input[type="email"] {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.75rem;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .newsletter button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .footer-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .social-icons {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .footer-nav ul {
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .footer-link {
+    font-size: 0.9rem;
+  }
+}
+
+  .hero-title {
+    font-size: 1.6rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-cta {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+  }
+
+  .templates-section {
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .filter-buttons {
+    margin-bottom: 1.5rem;
+  }
+
+  .filter-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .templates-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 0.5rem;
+  }
+
+  .template-card {
+    padding: 1rem 1rem;
+  }
+
+  .template-title {
+    font-size: 1.2rem;
+    margin: 1rem 0 0.5rem 0;
+  }
+
+  .template-price {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .modal-content {
+    max-width: 90%;
+    padding: 1.5rem 1rem;
+  }
+
+  .modal-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .modal-description {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .modal-price {
+    font-size: 1.1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .modal-buy-btn,
+  .modal-cancel-btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .pricing-section {
+    padding: 2rem 0;
+  }
+
+  .pricing-cards {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .pricing-card {
+    width: 100%;
+    max-width: 280px;
+    padding: 1.5rem 1rem;
+  }
+
+  .price {
+    font-size: 2rem;
+  }
+
+  .features-list {
+    font-size: 0.9rem;
+  }
+
+  .testimonials-section {
+    padding: 2rem 0;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .testimonial {
+    padding: 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .faq-section {
+    padding: 2rem 0;
+  }
+
+  .faq-question {
+    font-size: 1rem;
+    padding: 1rem 1rem;
+  }
+
+  .faq-answer {
+    font-size: 0.9rem;
+    padding: 1rem 1rem 1rem 1.5rem;
+  }
+
+  .footer {
+    padding: 2rem 0;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .newsletter h3 {
+    font-size: 1.1rem;
+  }
+
+  .newsletter input[type="email"] {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .newsletter button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .footer-nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .footer-link {
+    font-size: 0.9rem;
+  }
+
