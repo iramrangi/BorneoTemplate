@@ -989,3 +989,137 @@ body {
     flex-wrap: nowrap;
   }
 }
+
+/* Custom responsive for 400x592px dimension */
+@media (max-width: 400px) and (max-height: 592px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    width: 95%;
+    padding: 0 0.5rem;
+  }
+
+  .hero-title {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+
+  .templates-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+  }
+
+  .template-card {
+    padding: 1rem;
+  }
+
+  .template-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .template-title {
+    font-size: 1.25rem;
+  }
+
+  .template-price {
+    font-size: 1rem;
+  }
+
+  .pricing-cards {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .pricing-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+
+  .pricing-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .price {
+    font-size: 1.5rem;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+  }
+
+  .testimonial {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .faq-question {
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .faq-answer {
+    font-size: 0.9rem;
+    padding: 1rem 1rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .footer-links {
+    align-items: flex-start;
+  }
+
+  .newsletter input[type="email"] {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .newsletter button {
+    font-size: 0.9rem;
+    padding: 0 1rem;
+  }
+
+  .modal-content {
+    max-width: 90%;
+    padding: 1.5rem;
+  }
+
+  .modal-title {
+    font-size: 1.25rem;
+  }
+
+  .modal-description {
+    font-size: 1rem;
+  }
+
+  .modal-price {
+    font-size: 1.1rem;
+  }
+
+  .modal-buy-btn,
+  .modal-cancel-btn {
+    width: 100%;
+    margin-bottom: 0.75rem;
+  }
+
+  .modal-buy-btn:last-child,
+  .modal-cancel-btn:last-child {
+    margin-bottom: 0;
+  }
+}
