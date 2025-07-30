@@ -12,4 +12,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
   navToggle.addEventListener('click', toggleNav);
   navOverlay.addEventListener('click', toggleNav);
+
+  // FAQ toggle functionality
+  const faqQuestions = document.querySelectorAll('.faq-question');
+  faqQuestions.forEach((question) => {
+    question.addEventListener('click', () => {
+      const expanded = question.getAttribute('aria-expanded') === 'true';
+      question.setAttribute('aria-expanded', !expanded);
+      const answer = question.nextElementSibling;
+      if (answer) {
+        if (expanded) {
+          answer.setAttribute('hidden', '');
+        } else {
+          answer.removeAttribute('hidden');
+        }
+      }
+    });
+  });
 });
